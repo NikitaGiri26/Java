@@ -1,0 +1,11 @@
+package Test;
+
+public class MyClassTest {
+
+	public static void main(String[] args) {
+		
+		MyClassTest obj = new MyClassTest();
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package Test;
+
+import com.demo.beans.MyClass;
+
+public class MyClassTest {
+
+	public static void main(String[] args) {
+		
+		MyClass obj = new MyClass();
+		
+		System.out.println(obj.fun(1,2));
+		System.out.println(obj.fun(0.5f,2));
+		System.out.println(obj.fun("Hello", " World"));
+		System.out.println(obj.fun(1,2,3,4,5,6,7,8,9,10));
+
+	}
+
+}

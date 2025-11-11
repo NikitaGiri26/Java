@@ -1,0 +1,13 @@
+command=C\:\\Users\\IET\\Desktop\\New folder\\eclipse-jee-2023-03-R-win32-x86_64\\eclipse\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\\jre\\bin\\javadoc.exe
+content_assist_add_import=true
+content_assist_autoactivation_triggers_java=.@(\#&$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.text.DateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.SimpleDateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="EmpManage.Employee"><rhs name\="EmpManage.Employee"/><rhs name\="EmpManage.SalariedEmp"/><rhs name\="EmpManage.ContractedEmp"/></lhs><lhs name\="EmpManage.Person"><rhs name\="EmpManage.Employee"/><rhs name\="EmpManage.SalariedEmp"/><rhs name\="EmpManage.ContractedEmp"/></lhs><lhs name\="EmpManage.SalariedEmp"><rhs name\="EmpManage.SalariedEmp"/></lhs><lhs name\="EmpManage.ContractedEmp"><rhs name\="EmpManage.ContractedEmp"/></lhs><lhs name\="Friends.Friends"><rhs name\="Friends.Friends"/></lhs><lhs name\="Test.MyClassTest"><rhs name\="Test.MyClassTest"/></lhs><lhs name\="Test.MyInterfaceTest"><rhs name\="Test.MyInterfaceTest"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="java.lang.String"/></lhs><lhs name\="java.lang.constant.ConstantDesc"><rhs name\="java.lang.String"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs></history>
+content_assist_number_of_computers=17
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

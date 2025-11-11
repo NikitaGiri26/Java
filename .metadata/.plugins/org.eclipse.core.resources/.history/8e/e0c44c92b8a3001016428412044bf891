@@ -1,0 +1,39 @@
+package EmpManage;
+
+import java.util.Date;
+
+public class SalariedEmp extends Employee{
+	
+	private double salary;
+	private double bonus;
+	public SalariedEmp() {
+		super();
+	}
+	public SalariedEmp(String pid, String pname, Date bdate, String dept, String desg, double salary) {
+		super(pid, pname, bdate, dept, desg);
+		this.salary = salary;
+		this.bonus = salary * 0.10;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	public double getBonus() {
+		return bonus;
+	}
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+	@Override
+	public String toString() {
+		return super.toString()+" SalariedEmp [salary=" + salary + ", bonus=" + bonus + "]";
+	}
+	
+	public double calculateSal() {
+		return null;
+	}
+	
+	
+}

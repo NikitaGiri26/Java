@@ -1,0 +1,21 @@
+package Friends;
+
+import java.util.Scanner;
+
+public class FriendsTest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int choice = 0;
+		
+		do {
+			System.out.println("1. Display All Friend\n2. Search by id\n3. Search by name\n");
+			System.out.println("4. Display all friend with a particular hobby\n5. Exit");
+			System.out.print("Enter your choice : ");
+			choice = sc.nextInt();
+			
+		} while (choice != 5);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package Test;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		
+		String str1 = "sadbutsad";
+		String str2 = "sad";
+		
+		int i = str1.indexOf(str2);
+		System.out.println("Index of "+str2+ " in " + str1 +" is "+i);
+		
+		System.out.println(str1.toUpperCase());
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package Friends;
+
+public class FriendsService {
+	
+	static int count = 0;
+	static Friends[] friarr;
+	
+	static {
+		friarr = new Friends[10];
+		friarr[0] = new Friends();
+	}
+
+}

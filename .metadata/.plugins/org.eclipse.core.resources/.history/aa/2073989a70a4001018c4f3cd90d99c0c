@@ -1,0 +1,17 @@
+package com.demo.beans;
+
+public class MyClass {
+	
+	public int fun(int a, int b) {
+		return 0;
+	}
+	
+	public int fun(float a, float b) {
+		return 0;
+	}
+	
+	
+	public int fun(String a, String b) {
+		return 0;
+	}
+}

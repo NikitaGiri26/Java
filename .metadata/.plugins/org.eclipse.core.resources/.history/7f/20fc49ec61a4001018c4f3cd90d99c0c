@@ -1,0 +1,28 @@
+package Test;
+
+class test1 {
+    public void show() {
+        System.out.println("In test 1");
+    }
+}
+
+class test2 extends test1 {
+    public void show() {
+        System.out.println("In test 2");
+    }
+}
+
+class test3 extends test1 {
+    public void show() {
+        System.out.println("In test 3");
+    }
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

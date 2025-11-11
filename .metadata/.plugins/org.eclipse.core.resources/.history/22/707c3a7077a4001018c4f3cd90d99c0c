@@ -1,0 +1,8 @@
+package com.demo.beans;
+
+import Interfaces.Inter1;
+import Interfaces.Inter2;
+
+public class MyInterClass implements Inter1, Inter2{
+
+}

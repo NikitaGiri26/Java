@@ -1,0 +1,15 @@
+package Friends;
+
+import java.util.Date;
+
+public class Friends {
+	//id,name,lastname,hobbies,mobno,email,bdate,address
+	private int id;
+	private String fname;
+	private String lname;
+	private int mobno;
+	private String email;
+	private Date bDate;
+	private String address;
+	
+}

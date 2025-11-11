@@ -1,0 +1,18 @@
+package Friends;
+
+import java.util.Date;
+
+public class FriendsService {
+	
+	static int count = 0;
+	static Friends[] friarr;
+	////id,name,lastname,hobbies,mobno,email,bdate,address
+	static {
+		friarr = new Friends[10];
+		friarr[0] = new Friends(1,"abc", "cba", 1234567890, "abc@gmail.com", new Date(2001,05,13), "Pune");
+		friarr[1] = new Friends(1,"abc", "cba", 1234567890, "abc@gmail.com", new Date(2001,05,13), "Pune");
+		friarr[2] = new Friends(1,"abc", "cba", 1234567890, "abc@gmail.com", new Date(2001,05,13), "Pune");
+		count = 3;
+	}
+
+}

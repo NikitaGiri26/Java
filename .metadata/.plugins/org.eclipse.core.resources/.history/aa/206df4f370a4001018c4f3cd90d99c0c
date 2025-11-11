@@ -1,0 +1,15 @@
+package Test;
+
+import com.demo.beans.MyClass;
+
+public class MyClassTest {
+
+	public static void main(String[] args) {
+		
+		MyClass obj = new MyClass();
+		
+		obj.fun();
+
+	}
+
+}

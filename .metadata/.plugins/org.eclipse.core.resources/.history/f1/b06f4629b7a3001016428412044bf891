@@ -1,0 +1,124 @@
+package EmpManage;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class EmployeeService {
+	
+	static Employee[] emparr;
+	static int count = 0;
+	
+	static {
+		emparr = new Employee[50];
+		emparr[0] = new SalariedEmp("s1", "abc", new Date(), "IT", "HR", 100000);
+		emparr[1] = new ContractedEmp("c1", "xyz", new Date(2003, 11, 15), "ESE", "HOD", 80, 3000);
+		count = 2;
+	}
+
+	public static void addNewEmployee(int ch) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter Person ID : ");
+		String id = sc.next();		
+		
+		System.out.print("Enter Person name : ");
+		String name = sc.next();	
+		
+		System.out.print("Enter Joining Date (dd/mm/yyyy) : ");
+		String date = sc.next();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		Date dt = null;
+		
+		try {
+		 dt = sdf.parse(date);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.print("Enter Department : ");
+		String dept = sc.next();
+		
+		System.out.print("Enter Designation : ");
+		String desg = sc.next();
+		
+		if (ch == 1) 
+		{
+			System.out.print("Enter Salary : ");
+			double sal = sc.nextDouble();
+			
+//			SalariedEmp s1 = new SalariedEmp(id, name, dt, dept, desg, sal);
+			
+			emparr[count] = new SalariedEmp(id, name, dt, dept, desg, sal);
+			count ++;
+		}
+		else if (ch == 2) 
+		{
+			System.out.print("Enter Hrs : ");
+			Float hrs = sc.nextFloat();
+			
+			System.out.print("Enter Charge/Hrs : ");
+			Float hrsCh = sc.nextFloat();
+			
+//			ContractedEmp c1 = new ContractedEmp(id, name, dt, dept, desg, hrs, hrsCh);
+			
+			emparr[count] = new ContractedEmp(id, name, dt, dept, desg, hrs, hrsCh);
+			count ++;
+		}
+	}
+
+	public static void displayAll() {
+		
+		for (Employee emp : emparr) {
+			if (emp != null) {				
+				System.out.println(emp);
+			}
+		}
+		
+	}
+
+	public static Employee findById(String id) {
+		
+		for (Employee emp : emparr) {
+			if (emp != null) {
+				if (emp.getPid().equals(id)) {					
+					return emp;
+				}
+			}
+		}
+		return null;
+	}
+
+	public static void updateSalary(String id) {
+		Scanner sc = new Scanner(System.in);
+		
+		Employee e = findById(id);
+		
+		System.out.print("Enter updated salary : ");
+		double sal = sc.nextDouble();
+		
+		if (e instanceof SalariedEmp) {
+			((SalariedEmp) e).setSalary(sal);
+			((SalariedEmp) e).setBonus(sal*0.1);
+		}
+		else if (e instanceof ContractedEmp) {
+			((ContractedEmp) e).setHrs_charge(sal);
+		}
+		
+	}
+
+	public static void displayOnlySalaried() {
+		
+		for (Employee employee : emparr) {
+			if (employee instanceof SalariedEmp) {
+				System.out.println(employee);
+			}
+		}
+		
+	}
+
+}
